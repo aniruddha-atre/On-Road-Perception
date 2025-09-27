@@ -1,0 +1,80 @@
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Python / Build ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.build/
+dist/
+pip-wheel-metadata/
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+
+# --- Notebooks cache ---
+.ipynb_checkpoints/
+
+# --- Logs / temp / caches ---
+*.log
+logs/
+.cache/
+tmp/
+temp/
+
+# --- Project datasets & heavy artifacts ---
+data/**/*
+!data/.gitkeep
+# keep small config/meta files if you need:
+!data/**/meta.yaml
+
+# If you want to keep lightweight dataset configs, whitelist them above.
+# Explicitly ignore raw KITTI and derived YOLO images:
+data/kitti_raw/
+data/kitti_yolo/
+data/kitti_semantic/
+# If you keep sample assets (tiny), whitelist:
+!assets/
+assets/*.md
+
+# --- Training outputs ---
+runs/
+wandb/
+outputs/
+checkpoints/
+*.pt
+*.onnx
+*.engine
+
+# --- Media artifacts ---
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.gif
+*.jpg
+*.jpeg
+*.png
+# Keep small UI icons/thumbnails if needed:
+!assets/icons/**
+!assets/samples/**
+
+# --- Docker ---
+*.env
+.env
+docker/*.env
+# Docker build cruft
+**/.dockerignore
+
+# --- Node / front-end (if any future UI) ---
+node_modules/
