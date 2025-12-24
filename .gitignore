@@ -35,17 +35,15 @@ temp/
 # --- Project datasets & heavy artifacts ---
 data/**/*
 !data/.gitkeep
-# keep small config/meta files if you need:
+# keep small config/meta files
 !data/**/meta.yaml
 
-# If you want to keep lightweight dataset configs, whitelist them above.
-# Explicitly ignore raw KITTI and derived YOLO images:
 data/kitti_raw/
 data/kitti_yolo/
 data/kitti_semantic/
-# If you keep sample assets (tiny), whitelist:
+
+# Whitelist assets
 !assets/
-assets/*.md
 
 # --- Training outputs ---
 runs/
@@ -65,16 +63,3 @@ checkpoints/
 *.jpg
 *.jpeg
 *.png
-# Keep small UI icons/thumbnails if needed:
-!assets/icons/**
-!assets/samples/**
-
-# --- Docker ---
-*.env
-.env
-docker/*.env
-# Docker build cruft
-**/.dockerignore
-
-# --- Node / front-end (if any future UI) ---
-node_modules/
