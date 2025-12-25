@@ -1,4 +1,3 @@
-# src/data_preprocessing/kitti_to_yolo.py
 import os, glob
 from pathlib import Path
 from tqdm import tqdm
@@ -34,11 +33,9 @@ def kitti_to_yolo_bbox(l, t, r, b, img_w, img_h):
     return x_c, y_c, w, h
 
 def main():
-    # --- YOUR ACTUAL KITTI ROOTS ---
+    # Define paths to kitti data
     img_train_dir = Path("data/kitti_raw/data_object_image_2/training/image_2")
     lbl_train_dir = Path("data/kitti_raw/data_object_label_2/training/label_2")
-    # test images exist here but have NO labels; we ignore them:
-    # img_test_dir  = Path("data/kitti_raw/data_object_image_2/testing/image_2")
 
     out_root = Path("data/kitti_yolo")
     out_img = out_root / "images" / "all"
@@ -56,7 +53,7 @@ def main():
 
         if not label_path.exists():
             skipped += 1
-            continue  # Safety: shouldn’t happen in training, but guard anyway
+            continue
 
         img = cv2.imread(str(ip))
         if img is None:
@@ -77,7 +74,6 @@ def main():
                 cid = KITTI_TO_YOLO[cls]
                 yolo_lines.append(f"{cid} {x_c:.6f} {y_c:.6f} {bw:.6f} {bh:.6f}")
 
-        # Keep original extension to avoid recompression if you prefer; jpg is fine too.
         ext = ip.suffix.lower()
         out_img_path = out_img / f"{base}{ext}"
         cv2.imwrite(str(out_img_path), img)

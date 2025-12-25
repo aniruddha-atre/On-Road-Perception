@@ -1,4 +1,3 @@
-# src/data_preprocessing/split_dataset.py
 from pathlib import Path
 import shutil, random
 from tqdm import tqdm
