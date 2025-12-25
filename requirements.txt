@@ -6,3 +6,5 @@ tqdm
 matplotlib
 pyyaml
 scikit-learn
+torch>=2.1
+torchvision>=0.16
