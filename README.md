@@ -53,7 +53,7 @@ b) Validation mIoU vs Epoch
 
 Object Detection vs Semantic Segmentation
 
-![object_detection (1)](https://github.com/user-attachments/assets/5d673cee-7e75-4845-b772-a94bbaf17a6f) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![semantic_segmentation (1)](https://github.com/user-attachments/assets/0e16f9f7-4f6b-4192-be37-df59a9c56a5b)
+![object_detection (1)](https://github.com/user-attachments/assets/5d673cee-7e75-4845-b772-a94bbaf17a6f) &nbsp;&nbsp;&nbsp;&nbsp; ![semantic_segmentation (1)](https://github.com/user-attachments/assets/0e16f9f7-4f6b-4192-be37-df59a9c56a5b)
 
 
 
