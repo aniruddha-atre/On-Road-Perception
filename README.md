@@ -21,7 +21,7 @@ Trained on road-scene style set-up - KITTI dataset
 Detects vehicles, pedestrians, cyclists, and traffic-relevant objects  
 
 📈 Key Results  
-Achieved 94% mAP50
+Achieved 94% mAP50  
 Achieved 75% mAP50-95
 
 <br>
