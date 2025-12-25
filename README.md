@@ -7,11 +7,23 @@ b) Semantic Segmentation using Transformer-based SegFormer
 
 The emphasis is on model training quality, evaluation metrics, and visual results, following practices used in real-world autonomous driving pipelines.
 
+## 🖼 Qualitative Results
+
+Object Detection vs Semantic Segmentation
+
+![object_detection (1)](https://github.com/user-attachments/assets/5d673cee-7e75-4845-b772-a94bbaf17a6f) &nbsp;&nbsp;&nbsp;&nbsp; ![semantic_segmentation (1)](https://github.com/user-attachments/assets/0e16f9f7-4f6b-4192-be37-df59a9c56a5b)
+
+
 ## 1️⃣ Object Detection — YOLOv8
 
 Trained on road-scene style set-up - KITTI dataset
 
 Detects vehicles, pedestrians, cyclists, and traffic-relevant objects  
+
+📈 Key Results  
+Achieved 94% mAP50
+Achieved 75% mAP50-95
+
 <br>
 
 📊 Training & Validation Curves
@@ -47,14 +59,6 @@ a) Train Loss vs Epoch
 b) Validation mIoU vs Epoch
 
 <img width="720" height="300" alt="image" src="https://github.com/user-attachments/assets/7368080e-304e-43ee-ac4b-8d30ee2a6cf9" /><br>
-
-
-## 🖼 Qualitative Results
-
-Object Detection vs Semantic Segmentation
-
-![object_detection (1)](https://github.com/user-attachments/assets/5d673cee-7e75-4845-b772-a94bbaf17a6f) &nbsp;&nbsp;&nbsp;&nbsp; ![semantic_segmentation (1)](https://github.com/user-attachments/assets/0e16f9f7-4f6b-4192-be37-df59a9c56a5b)
-
 
 
 ## Credit
